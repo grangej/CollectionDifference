@@ -12,6 +12,19 @@ import Foundation
 //
 //===----------------------------------------------------------------------===//
 
+public extension CollectionDifference.Change {
+
+    // Internal common field accessors
+    var offset: Int {
+        return _offset
+    }
+    var element: ChangeElement {
+        return _element
+    }
+    var associatedOffset: Int? {
+        return _associatedOffset
+    }
+}
 /// A type that represents the difference between two ordered collection states.
 public struct CollectionDifference<ChangeElement> {
     /// A type that represents a single change to a collection.

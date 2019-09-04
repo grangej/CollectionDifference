@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "CollectionDifference",
             dependencies: []),
-        .testTarget(
-            name: "CollectionDifferenceTests",
-            dependencies: ["CollectionDifference"]),
     ]
 )
